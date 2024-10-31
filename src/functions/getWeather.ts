@@ -1,7 +1,8 @@
-import { WeatherRates } from "./static/WeatherRates";
-import { Zones } from "./static/Zones";
-import { ChanceMap } from "./types/ChanceMap";
-import { WeatherMap } from "./types/WeatherMap";
+import { ValidZones } from "../static/AllowedZones";
+import { WeatherRates } from "../static/WeatherRates";
+import { Zones } from "../static/Zones";
+import { ChanceMap } from "../types/ChanceMap";
+import { WeatherMap } from "../types/WeatherMap";
 
 // This code was ripped directly from eorzea-weather and modified for
 // the files in static
@@ -27,7 +28,14 @@ const getChance = (date: Date): ChanceMap => {
   return { chance: step2 % 0x64, increment };
 };
 
-export const getWeather = (date: Date, zone: string): WeatherMap => {
+/**
+ * Gets the weather in a zone as well as the 4 hour increment for a specific time. 16:00 is 0, 00:00 is 8 and 08:00 is 16.
+ * @param date
+ * @param zone 
+ * @returns {currentWeather: string, increment: number}
+ * 
+ */
+export const getWeather = (date: Date, zone: ValidZones): WeatherMap => {
   const { chance: hash, increment } = getChance(date);
   if (zone in Zones) {
     const rates = WeatherRates[Zones[zone]];
