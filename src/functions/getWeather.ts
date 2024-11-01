@@ -2,7 +2,9 @@ import { ValidZones } from "../static/AllowedZones";
 import { WeatherRates } from "../static/WeatherRates";
 import { Zones } from "../static/Zones";
 import { ChanceMap } from "../types/ChanceMap";
+import { RateMap } from "../types/RateMap";
 import { WeatherMap } from "../types/WeatherMap";
+import { ZoneObject } from "../types/ZoneObject";
 
 // This code was ripped directly from eorzea-weather and modified for
 // the files in static
@@ -28,29 +30,32 @@ const getChance = (date: Date): ChanceMap => {
   return { chance: step2 % 0x64, increment };
 };
 
+const getWeatherForRate = (rates: RateMap[], date: Date): WeatherMap => {
+  const { chance: hash, increment } = getChance(date);
+  // This code was ripped directly from eorzea-weather
+  // Determines the weather based on the rate for each weather
+  let cumChance = 0;
+  for (const { Weather, Rate: chance } of rates) {
+    if ((cumChance += <number>chance) > hash) {
+      return { currentWeather: Weather, increment };
+    }
+  }
+
+  return { currentWeather: "Bad Chance or Weather", increment: -1 };
+};
+
 /**
  * Gets the weather in a zone as well as the 4 hour increment for a specific time. 16:00 is 0, 00:00 is 8 and 08:00 is 16.
  * @param date
- * @param zone 
+ * @param zone
  * @returns {currentWeather: string, increment: number}
- * 
+ *
  */
-export const getWeather = (date: Date, zone: ValidZones): WeatherMap => {
-  const { chance: hash, increment } = getChance(date);
-  if (zone in Zones) {
-    const rates = WeatherRates[Zones[zone]];
-
-    // This code was ripped directly from eorzea-weather
-    // Determines the weather based on the rate for each weather
-    let cumChance = 0;
-    for (const { Weather, Rate: chance } of rates) {
-      if ((cumChance += <number>chance) > hash) {
-        return { currentWeather: Weather, increment };
-      }
-    }
-
-    return { currentWeather: "nothing", increment: -1 };
-  } else {
-    return { currentWeather: "Bad Zone", increment: -1 };
-  }
+export const getWeather = (
+  date: Date,
+  zone: ValidZones | ZoneObject
+): WeatherMap => {
+  const rates =
+    WeatherRates[typeof zone == "string" ? Zones[zone] : <number>zone.Rate];
+  return getWeatherForRate(rates, date);
 };

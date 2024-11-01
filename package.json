@@ -1,6 +1,6 @@
 {
   "name": "xivweather",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Weather for Final Fantasy XIV built off of eorzea-weather using generated weather files for additional/updated functionality.",
   "scripts": {
     "prepublish": "tsc"
