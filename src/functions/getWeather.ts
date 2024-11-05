@@ -41,7 +41,7 @@ const getWeatherForRate = (rates: RateMap[], date: Date): WeatherMap => {
     }
   }
 
-  return { currentWeather: "Bad Chance or Weather", increment: -1 };
+  return { currentWeather: "", increment: -1 };
 };
 
 /**

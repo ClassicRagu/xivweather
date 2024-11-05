@@ -1,4 +1,4 @@
 export type RateMap = {
-  Weather: string,
+  Weather: AllowedWeathers,
   Rate: number
 }

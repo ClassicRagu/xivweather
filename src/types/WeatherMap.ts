@@ -1,4 +1,4 @@
 export type WeatherMap = {
-  currentWeather: string,
+  currentWeather: AllowedWeathers,
   increment: number
 }

@@ -35,7 +35,7 @@ export const findWeatherWindows = (
   endTime: Date,
   consecutiveWindows: number,
   zone: ZoneObject,
-  weathers: string[],
+  weathers: AllowedWeathers[],
   // Night only limits results when set to 1-2 consecutive windows
   // At 1 window it allows both 4pm and 12am
   // At 2 windows it allows only 4pm
