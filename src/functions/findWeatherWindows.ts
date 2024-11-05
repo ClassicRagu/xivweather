@@ -1,3 +1,4 @@
+import { AllowedWeathers } from "../static/AllowedWeathers";
 import { WindowTimes } from "../types/WindowTimes";
 import { ZoneObject } from "../types/ZoneObject";
 import { getETWindow } from "./getETWindow";
