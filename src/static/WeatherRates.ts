@@ -5681,8 +5681,8 @@ export const WeatherRates: RateMap[][] = [
   ],
   [
     {
-      "Rate": 0,
-      "Weather": ""
+      "Rate": 100,
+      "Weather": "Electrostatic Dust"
     },
     {
       "Rate": 0,

@@ -492,5 +492,11 @@ export const Zones: {[key: string]: number} = {
   "Greenroom": 0,
   "The For'ard Cabins": 159,
   "Manor Basement": 0,
-  "Dreamlike Palace": 0
+  "Dreamlike Palace": 0,
+  "Yuweyawata": 86,
+  "Jeuno: The First Walk": 150,
+  "Lower Jeuno": 0,
+  "Starlight Stalls": 27,
+  "Norvrandt": 0,
+  "Hydaelyn": 0
 }
