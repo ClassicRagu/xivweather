@@ -61,6 +61,7 @@ export const Zones: {[key: string]: number} = {
   "Mist": 32,
   "Command Room": 14,
   "The Memory of Embers": 155,
+  "A Future Rewritten": 0,
   "Heart of the Sworn": 0,
   "The Waking Sands": 0,
   "The Fold": 0,

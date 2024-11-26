@@ -61,6 +61,7 @@ export const ZONE_LABYRINTH_OF_THE_ANCIENTS: ZoneObject = {Name: "Labyrinth of t
 export const ZONE_MIST: ZoneObject = {Name: "Mist", Rate: 32}
 export const ZONE_COMMAND_ROOM: ZoneObject = {Name: "Command Room", Rate: 14}
 export const ZONE_THE_MEMORY_OF_EMBERS: ZoneObject = {Name: "The Memory of Embers", Rate: 155}
+export const ZONE_A_FUTURE_REWRITTEN: ZoneObject = {Name: "A Future Rewritten", Rate: 0}
 export const ZONE_HEART_OF_THE_SWORN: ZoneObject = {Name: "Heart of the Sworn", Rate: 0}
 export const ZONE_THE_WAKING_SANDS: ZoneObject = {Name: "The Waking Sands", Rate: 0}
 export const ZONE_THE_FOLD: ZoneObject = {Name: "The Fold", Rate: 0}
