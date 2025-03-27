@@ -498,6 +498,17 @@ export const Zones: {[key: string]: number} = {
   "Jeuno: The First Walk": 150,
   "Lower Jeuno": 0,
   "Starlight Stalls": 27,
+  "Hall of the Unbound": 0,
   "Norvrandt": 0,
-  "Hydaelyn": 0
+  "Hydaelyn": 0,
+  "Zorgor the Boundless": 0,
+  "Rebel Ring": 0,
+  "Groovy Ring": 0,
+  "Hunter's Ring": 0,
+  "Hunting Ground": 0,
+  "The Underkeep": 0,
+  "Demolition Site": 0,
+  "Break Room": 0,
+  "Throne Room": 0,
+  "Recollection": 0
 }

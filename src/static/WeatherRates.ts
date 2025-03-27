@@ -5715,7 +5715,27 @@ export const WeatherRates: RateMap[][] = [
   ],
   [
     {
-      "Rate": 0,
+      "Rate": 10,
+      "Weather": "Clear Skies"
+    },
+    {
+      "Rate": 45,
+      "Weather": "Fair Skies"
+    },
+    {
+      "Rate": 15,
+      "Weather": "Clouds"
+    },
+    {
+      "Rate": 10,
+      "Weather": "Rain"
+    },
+    {
+      "Rate": 15,
+      "Weather": ""
+    },
+    {
+      "Rate": 5,
       "Weather": ""
     },
     {
@@ -5725,6 +5745,20 @@ export const WeatherRates: RateMap[][] = [
     {
       "Rate": 0,
       "Weather": ""
+    }
+  ],
+  [
+    {
+      "Rate": 15,
+      "Weather": "Moon Dust"
+    },
+    {
+      "Rate": 70,
+      "Weather": "Fair Skies"
+    },
+    {
+      "Rate": 15,
+      "Weather": "Umbral Wind"
     },
     {
       "Rate": 0,
