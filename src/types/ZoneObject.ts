@@ -1,3 +1,3 @@
 import { ValidZones } from "../static/AllowedZones";
 
-export type ZoneObject = { Name: ValidZones; Rate: Number };
+export type ZoneObject = { Name: ValidZones; Rate: number };
