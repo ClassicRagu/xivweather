@@ -508,6 +508,7 @@ export const ZONE_HUNTERS_RING: ZoneObject = {Name: "Hunter's Ring", Rate: 0}
 export const ZONE_HUNTING_GROUND: ZoneObject = {Name: "Hunting Ground", Rate: 0}
 export const ZONE_THE_UNDERKEEP: ZoneObject = {Name: "The Underkeep", Rate: 0}
 export const ZONE_DEMOLITION_SITE: ZoneObject = {Name: "Demolition Site", Rate: 0}
+export const ZONE_SINUS_ARDORUM: ZoneObject = {Name: "Sinus Ardorum", Rate: 169}
 export const ZONE_BREAK_ROOM: ZoneObject = {Name: "Break Room", Rate: 0}
 export const ZONE_THRONE_ROOM: ZoneObject = {Name: "Throne Room", Rate: 0}
 export const ZONE_RECOLLECTION: ZoneObject = {Name: "Recollection", Rate: 0}

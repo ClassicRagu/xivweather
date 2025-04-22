@@ -508,6 +508,7 @@ export const Zones: {[key: string]: number} = {
   "Hunting Ground": 0,
   "The Underkeep": 0,
   "Demolition Site": 0,
+  "Sinus Ardorum": 169,
   "Break Room": 0,
   "Throne Room": 0,
   "Recollection": 0
