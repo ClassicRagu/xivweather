@@ -5732,11 +5732,11 @@ export const WeatherRates: RateMap[][] = [
     },
     {
       "Rate": 15,
-      "Weather": ""
+      "Weather": "Atmospheric Phantasms"
     },
     {
       "Rate": 5,
-      "Weather": ""
+      "Weather": "Illusory Disturbances"
     },
     {
       "Rate": 0,
@@ -5759,6 +5759,74 @@ export const WeatherRates: RateMap[][] = [
     {
       "Rate": 15,
       "Weather": "Umbral Wind"
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    }
+  ],
+  [
+    {
+      "Rate": 100,
+      "Weather": "Dying Breath"
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    }
+  ],
+  [
+    {
+      "Rate": 60,
+      "Weather": "Fair Skies"
+    },
+    {
+      "Rate": 20,
+      "Weather": "Clouds"
+    },
+    {
+      "Rate": 20,
+      "Weather": "Rain"
     },
     {
       "Rate": 0,

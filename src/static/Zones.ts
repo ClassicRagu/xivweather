@@ -502,6 +502,8 @@ export const Zones: {[key: string]: number} = {
   "Norvrandt": 0,
   "Hydaelyn": 0,
   "Zorgor the Boundless": 0,
+  "South Horn": 168,
+  "Tower of Blood": 168,
   "Rebel Ring": 0,
   "Groovy Ring": 0,
   "Hunter's Ring": 0,
@@ -511,5 +513,14 @@ export const Zones: {[key: string]: number} = {
   "Sinus Ardorum": 169,
   "Break Room": 0,
   "Throne Room": 0,
-  "Recollection": 0
+  "Phantom Village": 0,
+  "Recollection": 0,
+  "San d'Oria: The Second Walk": 150,
+  "The Ageless Necropolis": 0,
+  "The Lightless Abyss": 0,
+  "The Meso Terminal": 0,
+  "Vault Oneiron": 0,
+  "The Bayside Battleground": 0,
+  "Containment Complex 10-29": 0,
+  "Phaenna": 171
 }
