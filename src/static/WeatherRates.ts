@@ -5848,5 +5848,39 @@ export const WeatherRates: RateMap[][] = [
       "Rate": 0,
       "Weather": ""
     }
+  ],
+  [
+    {
+      "Rate": 20,
+      "Weather": "Clouds"
+    },
+    {
+      "Rate": 60,
+      "Weather": "Fair Skies"
+    },
+    {
+      "Rate": 20,
+      "Weather": "Clear Skies"
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    },
+    {
+      "Rate": 0,
+      "Weather": ""
+    }
   ]
 ]
